@@ -16,7 +16,7 @@ fetch('db.json')
     movieShowtime.textContent = `Showtime: ${data.showtime}`;
     movieAvailableTickets.textContent = `Available tickets: ${data.capacity - data.tickets_sold}`;
     buyTicketButton.addEventListener('click', () => buyTicket(data.id));
-  });
+ })
 
 // Get the list of all movies when the page loads
 fetch('db.json')
